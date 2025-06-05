@@ -9,16 +9,40 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#connectWalletBtn{
-  background-color: lightgreen;
-  color: black;
-  font-weight: bolder;
-  width: auto;
+#connectWalletBtn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  width:auto;
 }
-button, select {
+#connectWalletBtn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+#wallet-status {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+select{
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  width:100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -49,13 +73,15 @@ input[type="text"] {
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-div h2{
+div h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  height: 10px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-top:0px
 }
 .newnote {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 0px;
   padding: 5px;
   background-color: rgba(20, 19, 19, 0);
