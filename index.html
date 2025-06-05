@@ -16,12 +16,14 @@
 
   <button id="connectWalletBtn">Connect Wallet</button>
   <div id="wallet-status">Wallet not connected</div>
-
-  <input type="text" id="noteContent" placeholder="Note content" />
+  <div class="newnote">
+    <h2>Create a New Note</h2>
+  <textarea id="noteContent" placeholder="Enter your note here..." rows="15" cols="79" autofocus></textarea>
   <input type="text" id="noteTag" placeholder="Optional tag (e.g., work)" />
+  </div>
   <div class="button">
     <button id="addNoteBtn">Add Note</button>
-    <button id="clearNotesBtn">Clear UI</button>
+    <button id="clearNotesBtn">Clear All Notes</button>
   </div>
 
   <input type="text" id="searchInput" placeholder="Search notes..." oninput="renderNotes()" />

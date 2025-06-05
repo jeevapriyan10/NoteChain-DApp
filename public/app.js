@@ -56,7 +56,7 @@ async function renderNotes() {
     ) {
       const li = document.createElement('li');
       li.innerHTML = `
-        <div class="note-header">${note.tag || "No Tag"}</div>
+        <div class="note-header">${note.tag || "[No Tag]"}</div>
         <div>${note.content}</div>
         <button class="editBtn" onclick="editNote(${note.id}, '${note.content}', '${note.tag}')">Edit</button>
         <button class="deleteBtn" onclick="deleteNote(${note.id})">Delete</button>
